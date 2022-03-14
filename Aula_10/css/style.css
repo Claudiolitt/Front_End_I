@@ -1,62 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+    font-family: Roboto, sans-serif;
+ }
 
-ul {
+.discountBar {
+    display: flex;
+    background-color: aqua;
+    height: 30px;
+    align-items: center;
+    padding-left: 10px;
+ }
 
-}
+h1 {
+    padding-left: 20px;
+    display:flex;
+    align-items: center;
+    background-color: #00669F;
+    height: 80px;
+    box-shadow: 0px 10px 0px 0px #d8d6d6;
+ }
 
-.pizza_Header {
-    height: 10%;
-    background-color: black;
-    
-}
+body {
+    height: 800px;
+ }
 
-.pizza_Img {
-    background-image: url(../img/);
+main {
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+ }
 
-}
+.card {
+    height: 600px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color:#F3F3F3;
+    border-radius: 5px;
+    box-shadow: 0px 2px 0px 0px gray
+ }
 
-.logotipo_Principal {
-    
-}
+.card_Img {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 
-.palavra_Verde {
+ }
 
-}
+.card_Text {
+    width: 70%;
+ }
 
-.palavra_Branca {
+h2 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+ }
 
-}
+.background_img {
+    justify-self: flex-start;
+    height: 100%;
+    width: 100%;
 
-.palavra_Vermelha {
+ }
 
-}
+.hero_Img {
+    position: relative;
+    border-radius: 50%;
+    bottom:50%;
+ }
 
-.container {
+.card_Button {
+    position: relative;
+    bottom: -20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00669F;
+    height: 30px;
+    width: 100px;
+    border-radius: 2px;
+ }
 
-}
+.card_Button a {
+    color: white;
+ }
 
-.promocao {
+footer {
+    display: flex;
+    background-color: #00669F;
+    height: 50px;
+    align-items: center;
+    padding-left: 10px;
+ }
 
-}
-
-.promocao_Texto {
-
-}
-
-.titulo_Cardapio {
-
-}
-
-.cardapio_Img {
-
-}
-
-.logotipo_Footer {
-
-}
-
-
+footer span {
+    color: white;
+ }
