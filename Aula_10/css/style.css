@@ -58,6 +58,16 @@ main {
 
  }
 
+.like {
+    height: 20px;
+    width: 20px;
+    position: absolute; 
+    align-self: flex-start;
+    margin-top: 10px;
+    margin-left: 10px;
+        
+ }
+
 .card_Text {
     width: 70%;
  }
@@ -103,6 +113,7 @@ footer {
     background-color: #00669F;
     height: 50px;
     align-items: center;
+    justify-content: center;
     padding-left: 10px;
  }
 
@@ -110,13 +121,5 @@ footer span {
     color: white;
  }
 
- .like {
-    height: 20px;
-    width: 20px;
-    position: absolute; 
-    align-self: flex-start;
-    margin-top: 10px;
-    margin-left: 10px;
-    
- }
+
      
