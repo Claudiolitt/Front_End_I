@@ -7,7 +7,7 @@ Uma das principais tarefas de uma pessoa desenvolvedora de Front End é estrutur
 ### Desafio 
 Usando o exemplo abaixo como fonte de dados para uma incrível receita de bolo de cenoura, a ideia é reconhecer quais podem ser os diferentes elementos HTML que correspondem ao seguinte resultado visual:
 
-![Alt text](C:\Users\claudio.purificacao\Desktop\Aula_04.jpg?raw=true "Title"
+![Alt text](C:/Users/claudio.purificacao/Desktop/Aula_04.jpg?raw=true "Title"
 
 Vamos ao passo a passo:
 
