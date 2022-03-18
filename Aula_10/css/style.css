@@ -7,6 +7,8 @@
     font-family: Roboto, sans-serif;
  }
 
+
+
 header {
     height: 100px;
     position: fixed;
@@ -33,18 +35,11 @@ h1 {
     
  }
 
-body {
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 
-
- }
 
 main {
-    margin-top: 200px;
-    height: 600px;
+    margin-top: 50px;
+    height: 800px;
     display: flex;
     flex-direction: row;
     gap: 50px;
@@ -108,8 +103,8 @@ h2 {
  }
 
 .card_Button {
-    position: absolute;
-    bottom: -150px;
+    position: relative;
+    bottom: -100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,13 +119,13 @@ h2 {
  }
 
 footer {
+    padding-bottom: 0px;
     display: flex;
     background-color: #00669F;
     height: 50px;
     width: 100%;
     align-items: center;
     justify-content: center;
-    padding-left: 10px;
  }
 
 footer span {
