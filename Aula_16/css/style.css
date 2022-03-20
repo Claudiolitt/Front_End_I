@@ -22,6 +22,58 @@ header {
     top: 0;
 }
 
+.menu  {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background:#001D2D ;
+    padding-right: 20px;
+    height: 25px;
+    font-size: 0.70rem;
+    box-shadow: 0px 10px 0px 0px #d8d6d6;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu ul li, .menu ul li a {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    text-decoration: none;
+   
+
+}
+
+
+.menu ul li:hover,.menu ul li a:hover  {
+    cursor: pointer;
+    color: #1CD1B0;
+    text-decoration: underline;
+}
+.account-img { 
+    color: white;
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+
+.loja {
+    display: flex;
+    align-items: center;
+    background-color: #00669F;
+}
+
+div.loja h1 {
+    color: white;
+    font-weight: 100;
+}
 .discountBar {
     display: flex;
     align-items: center;
@@ -36,12 +88,14 @@ h1 {
     padding-left: 20px;
     background-color: #00669F;
     height: 70px;
-    
+
 }
+
+
 
 main {
     width: 70%;
-    margin-top: 150px;
+    margin-top: 200px;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -51,6 +105,68 @@ main {
     gap: 50px;
     justify-content: center;
     align-items: center;
+}
+
+.container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+div.formulario {
+    height: 50vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registre-se a {
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+.formulario-label{
+    font-size: 3rem;
+    color: #333333;
+    text-align: left;
+    width: 100%;
+}
+
+div.formulario form{
+    width: 100%;
+}
+div.formulario input{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.submit {
+    background: #1CD1B0;
+    border-radius: 23.011px;
+    border: #1CD1B0;
+    font-size: 1.3rem;
+    
+    
+}
+.submit:hover {
+    cursor: pointer;
+    align-self: center;
+    transition: 2s;
+    color: white;
+    background-color: rgb(172, 17, 138, 0.7);
+    width: 20%;
+    margin-left: 40%;  
+    border: 20px black;
+
 }
 
 .card {
@@ -213,7 +329,6 @@ footer {
     align-items: center;
     justify-items: space-between;
     padding-right: 10px;
-
 }
 
 footer div {
@@ -236,6 +351,7 @@ footer div img {
 
 @media  (min-width:460px) {
     
+    
     .card_Text{
         font-size: 0.85rem;
     }
@@ -254,9 +370,17 @@ footer div img {
         height: 30vh;
     }
 }
+.menu {
+        flex-direction: column;
+        flex-direction: row;
 
+    }
 @media (min-width:780px) {
 
+    .menu {
+        flex-direction: row;
+
+    }
     .card_Text{
         font-size: 0.85rem;
     }
@@ -276,8 +400,8 @@ footer div img {
         font-size: 0.90rem;
     }
     .card {
-        width: 36%;
-        height: 90vh ;
+        width: 40%;
+        height: 100vh ;
     }
     .card_Img {
         height: 40vh;
@@ -290,7 +414,14 @@ footer div img {
         justify-content: space-between;
     }
 
-    
+    @media (min-width: 1200px) {
 
+        .card {
+            width: 35%;
+            height: 90vh;
+          
+        }
+
+    }
 }
 
