@@ -70,6 +70,13 @@ header {
     background-color: #00669F;
 }
 
+.loja img:hover{
+    transition: 0.7s;
+    box-shadow: 5px 5px 0px 0px #1CD1B0;
+    
+
+}
+
 div.loja h1 {
     color: white;
     font-weight: 100;
@@ -96,7 +103,7 @@ h1 {
 main {
     width: 70%;
     margin-top: 200px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
     margin-left: auto;
     margin-right: auto;
     height: fit-content; 
@@ -123,6 +130,7 @@ div.formulario {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .registre-se a {
@@ -140,6 +148,10 @@ div.formulario {
 div.formulario form{
     width: 100%;
 }
+
+div.formulario form select {
+    margin-top: 10px;
+}
 div.formulario input{
     width: 100%;
     height: 50px;
@@ -148,25 +160,58 @@ div.formulario input{
 }
 
 
+.password {
+    display: flex;
+    align-items: center;
 
+}
+#togglePassword {
+    margin-left: -30px; 
+    cursor: pointer;
+}
+input[type=password] {
+  
+    
+}
+
+.formulario select {
+    width: 100%;
+    order: 2;
+    height: 50px;
+    
+}
+
+.botao-envio {
+    display: flex;
+}
 .submit {
     background: #1CD1B0;
     border-radius: 23.011px;
     border: #1CD1B0;
-    font-size: 1.3rem;
-    
-    
+    font-size: 1.3rem;    
+    width: 40%;   
 }
+
 .submit:hover {
     cursor: pointer;
     align-self: center;
     transition: 2s;
     color: white;
     background-color: rgb(172, 17, 138, 0.7);
-    width: 20%;
+    width: 30%;
     margin-left: 40%;  
     border: 20px black;
 
+}
+
+.botao-envio input {
+
+    background: #1CD1B0;
+    border-radius: 23.011px;
+    border: #1CD1B0;
+    font-size: 1.3rem;    
+    width: 100px; 
+    margin: 10px;
 }
 
 .card {
@@ -244,7 +289,7 @@ img:nth-child(1) {
 
 .like:hover {
     transition: 0.5s;
-    top: 5px;
+    transform: scale(1.5);
 }
 a img.like {
     position: absolute; 
@@ -285,8 +330,8 @@ h2 {
 }
 
 .hero_Img:hover {
-    height: 120px;
-    width: 120px;
+    transition: 0.75s;
+    transform: scale(1.3);
     cursor: pointer;
 }
 
@@ -307,11 +352,10 @@ h2 {
 
 .card_Button:hover {
     bottom: 5px;
-    height: 70px;
-    width: 130px;
-    opacity: 0.7;   
-    background-color: rgb(6, 12, 100);
-    transition: 0.5s;
+    transform: scale(1.3);
+    opacity: 0.8;   
+    background-color: rgb(72, 4, 78);
+    transition: 0.7s;
     box-shadow: 3px 4px 0px 0px hotpink ;
     border-radius: 3%;
 }
@@ -319,6 +363,15 @@ h2 {
     color: white;
     text-decoration: none;
 }
+
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=password]:hover,
+select:hover {
+    border: 3px solid #1CD1B0;
+
+}
+
 
 footer {
     bottom: 0;
@@ -418,10 +471,9 @@ footer div img {
 
         .card {
             width: 35%;
-            height: 90vh;
-          
+            height: 90vh;          
         }
-
+    
     }
 }
 
