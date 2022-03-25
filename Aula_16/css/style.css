@@ -14,15 +14,15 @@ body {
 }
 
 header {
-    height: 100px;
+    height: 80px;
     position: fixed;
     width: 100%;
-    box-shadow: 0px 10px 0px 0px #d8d6d6;
     z-index: 23 ;
     top: 0;
 }
 
 .menu  {
+    margin-top:5px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -32,7 +32,6 @@ header {
     padding-right: 20px;
     height: 25px;
     font-size: 0.70rem;
-    box-shadow: 0px 10px 0px 0px #d8d6d6;
 }
 
 .menu ul {
@@ -51,7 +50,9 @@ header {
 
 }
 
-
+header a img {
+    height: 70px;
+}
 .menu ul li:hover,.menu ul li a:hover  {
     cursor: pointer;
     color: #1CD1B0;
@@ -65,37 +66,20 @@ header {
 }
 
 .loja {
+    height: 70px;
     display: flex;
     position: relative;
     align-items: center;
     background-color: #00669F;
+    box-shadow: 0px 5px 0px 0px rgb(0, 0, 0, 0.5);
     
 }
 
-.loja img::before{
-    content: '';    
-    background-color:  #1CD1B0;
-    height: 5px;
-    bottom: -10px;
-    width: 0;
-    position: absolute;   
-    transition: 1s;
-
-}
-
-.loja img:hover::before {
-    width: 100%;
-}
-
-div.loja h1 {
-    color: white;
-    font-weight: 100;
-}
 .discountBar {
     display: flex;
     align-items: center;
     background-color: aqua;
-    height: 30px;
+    height: 20px;
     padding-left: 10px;
 }
 
@@ -104,11 +88,11 @@ h1 {
     align-items: center;
     padding-left: 20px;
     background-color: #00669F;
-    height: 70px;
+    height: 40px;
+    color: white;
+    font-weight: 100;
 
 }
-
-
 
 main {
     width: 70%;
@@ -211,7 +195,19 @@ input[type=password] {
 
 }
 
-
+.container-arlequina {
+    margin-top: 95px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/bg 1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+}
 .container-botao {
     display: flex;
 }
@@ -227,6 +223,91 @@ input[type=password] {
     transition: 1s, linear 1s, transform 1s;
 }
 
+.card-descricao div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+.card-descricao {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 90vh;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.card-descricao img:nth-child(0) {
+    position: relative;
+    top: -10%;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.arlequina-vetor {
+    height: 30px;
+    width:30px;
+    background-color: palevioletred;
+}
+.card-descricao div:nth-child(5) {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    height: 40px;
+    border-radius: 0px 0px 30px 30px;
+    background-color: rgba(44, 1, 135, 1);
+    width: 100%;
+    transition: 1s, transform 1s;
+}
+
+.card-descricao div:nth-child(5) a {
+    color: white;
+    text-decoration: none;
+}
+.card-descricao div:nth-child(5):hover {
+    border-radius: 30px 30px 30px 30px;
+    background-color: #1CD1B0;
+    cursor: pointer;
+
+
+    
+}
+.card-descricao span:nth-child(4) a {
+    color: white;
+    text-decoration: none;
+}
+
+.card-descricao h2 {
+    margin-top: -20px;
+}
+
+  
+.card-descricao p {
+    text-align: justify;
+    width: 80%;
+    margin-top: -30px;
+    
+}
+
+.like-pixeled {
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    
+
+}
+.descricao-texto-destaque {
+    color: rgba(44, 1, 135, 1);
+    
+}
 .botao-envio {
     display: flex;
 }
@@ -424,6 +505,10 @@ textarea {
     height: 30vh;
     margin-top: 10px;
 }
+
+textarea:hover {
+    border:#1CD1B0 solid 2px;
+}
 footer {
     bottom: 0;
     min-width: 100%;
@@ -465,6 +550,9 @@ footer div img {
         height: 85vh ;
     }
    
+    .card-descricao {
+        width: 80%;
+    }
     
     footer { 
         height: 15vh;
@@ -480,7 +568,9 @@ footer div img {
 
     }
 @media (min-width:780px) {
-
+    .card-descricao {
+        width: 40%;
+    }
     .menu {
         flex-direction: row;
 
