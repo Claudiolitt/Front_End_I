@@ -51,12 +51,14 @@ nav ul li a::before{
     position:absolute;
     bottom:-10px;
     height:5px;
+    width: 0%;
+    transition: 1s;
 
     /*dica: width iniciando em 0 e aplicação de uma transição*/
   }
   
   nav ul li a:hover::before{
-   /*dica: width 100*/
+   width: 100%;
   }
   
 
@@ -77,7 +79,7 @@ nav ul li a::before{
     background: var(--primary-color);
     padding: 10px 15px;
     text-decoration: none;
-    /* transition: ; */
+    transition: 1s;
 }
 
 .social ul li .icon-facebook {background:#3b5998;} 
@@ -87,7 +89,10 @@ nav ul li a::before{
 .social ul li .icon-mail {background: #666666;}
 
 .social ul li a:hover{
-    /* transform: ; */
+    background-color:var(--primary-color);
+    padding: 10px 30px;
+
+
 }
 
 
@@ -129,9 +134,27 @@ nav ul li a::before{
     border-right: 10px solid rgb(66,139,202);
     border-bottom: 10px solid rgb(202, 66, 129);
     border-left: 10px solid rgba(66,139,202,.2);
-     /* animation: ; */
+    animation: spinner 5s ease-in-ou 2s infinite;
  }
  
 /* keyframes    
     crie a animação com a rotação do tempo 0 ao tempo 100
  */
+
+@keyframes slide-fwd-right {
+    0% {
+      transform: translateZ(0) translateX(0);
+    }
+    100% {
+      transform: translateZ(160px) translateX(100px);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0);
+    }
+      100% {
+        transform: rotate(360deg);
+    }
+}
