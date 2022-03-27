@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/589980d246.js" crossorigin="anonymous"></script>
     <title>Salvador</title>
 </head>
 
@@ -122,32 +122,32 @@
             </div>
         </div>
         <div class="card-video" id="video">
-            <div class="curiosity-title" id="curiosidades">
-                <div>
-                    <h2>Vídeo</h2>
-                </div>
+            <div class="video-title">
+                <h2>Vídeo</h2>
             </div>
             <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/hBopGKyPzgM"
-                    title="YouTube video player" frameborder="0"
+                <iframe src="https://www.youtube.com/embed/hBopGKyPzgM" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
             </div>
         </div>
         <footer>
-            <i class="fa-linkedin"></i>
+            <div class="font-awesome-icons">
+                <a href="https://www.linkedin.com/in/claudioleite02/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/Claudiolitt"><i class="fa-brands fa-github"></i></a>
+            </div>
         </footer>
     </main>
 
 
     <script type="text/javascript">
-        var counter = 4;
+        var counter = 1;
         setInterval(function () {
             document.getElementById('radio' + counter).checked = true;
-            counter--;
-            if (counter < 1) {
-                counter = 4;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
             }
         }, 5000);
     </script>
