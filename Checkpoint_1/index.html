@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Salvador</title>
+</head>
+
+<body>
+    <!--header configuration-->
+    <header>
+        <div class="header-city-card">
+            <div>
+                <img src="img/Bandeira_de_Salvador.png" alt="">
+            </div>
+            <h1>
+                Salvador
+            </h1>
+        </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#highlights">Highlights</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+                <li><a href="#video">Video</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--image slider-->
+
+
+
+    <section class="slider">
+        <div class="slides">
+            <!--radio buttons-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <!--slide images-->
+            <div class="slide first">
+                <img src="img/salvador_farol.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/Pelourinho.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/elavador.webp" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/itapua.jpg" alt="">
+            </div>
+            <!--automatic navigation start-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!--automatic navigation end-->
+
+        </div>
+        <!--manual navigation-->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+
+    </section>
+    <main>
+        <div class="banner" id="highlights">
+            <p>
+                Salvador é um município brasileiro e capital do estado da Bahia. Situada na Zona da Mata da Região
+                Nordeste do Brasil, Salvador é notável em todo o país pela sua <span>gastronomia</span>,
+                <span>música</span> e <span>arquitetura</span>,
+                reconhecidas também internacionalmente. A influência africana em muitos aspectos culturais da cidade
+                a
+                torna o centro da cultura afro-brasileira. Primeira capital da <span>América Portuguesa </span>, que
+                corresponde ao atual Brasil, a cidade é uma das mais antigas do continente americano e uma das
+                primeiras <span>cidades planejadas</span> no mundo, ainda no período do Renascimento.
+            </p>
+        </div>
+        <div class="card-container">
+            <div class="curiosity-title" id="curiosidades">
+                <div>
+                    <h2>Curiosidades</h2>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/elevador-lacerda-615x300.webp" alt="mercado_modelo">
+                <div class="card-text">
+                    <span>Elevador Lacerda</span>
+                    <p>Inaugurado em 8 de dezembro de 1873, foi o primeiro elevador do Brasil e o mais alto do mundo.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/carnaval_salvador.webp" alt="carnaval_salvador">
+                <div class="card-text">
+                    <span>Guiness Book</span>
+                    <p>Salvador já apareceu no livro dos recordes por ter o maior Carnaval do mundo.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/escola-de-medicina.webp" alt="escola-de-medicina">
+                <div class="card-text">
+                    <span>Escola de Medicina</span>
+                    <p>A faculdade de Medicina da Bahia, da Universidade Federal da Bahia, foi a primeira escola de
+                        nível
+                        superior no Brasil, criada como Escola de Cirurgia da Bahia em 18 de fevereiro de 1808.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-video" id="video">
+            <div class="curiosity-title" id="curiosidades">
+                <div>
+                    <h2>Vídeo</h2>
+                </div>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hBopGKyPzgM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <footer>
+            <i class="fa-linkedin"></i>
+        </footer>
+    </main>
+
+
+    <script type="text/javascript">
+        var counter = 4;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter--;
+            if (counter < 1) {
+                counter = 4;
+            }
+        }, 5000);
+    </script>
+
+
+</body>
+
+</html>
